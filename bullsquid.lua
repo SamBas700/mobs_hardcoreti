@@ -24,8 +24,8 @@ mobs:register_mob("mobs_hardcoreti:bullsquid", {
 	makes_footstep_sound = false,
 	sounds = {
 		random = "mobs_erepede",
-		death = "alo_death",
-		damage = "alo_hurt",
+		death = "cryo_death",
+		damage = "wtf_hurt",
 	},
 	view_range = 15,
 	walk_velocity = 3,

@@ -1,7 +1,7 @@
 
 local S = mobs.intllib
 
--- Mese Monster by Sambas
+-- Treemother by Sambas
 
 mobs:register_mob("mobs_hardcoreti:treemother", {
 	type = "monster",
@@ -9,7 +9,7 @@ mobs:register_mob("mobs_hardcoreti:treemother", {
 	damage = 10,
 	attack_type = "shoot",
 	shoot_interval = 0.5,
-	arrow = "mobs_hardcoreti:wendigo",
+	arrow = "mobs_monster:tree_monster",
 	shoot_offset = 2,
 	hp_min = 50,
 	hp_max = 60,

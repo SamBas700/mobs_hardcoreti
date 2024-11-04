@@ -1,7 +1,7 @@
 
 local S = mobs.intllib
 
--- Dirt Monster by PilzAdam
+-- Lurker by SamBas
 
 mobs:register_mob("mobs_hardcoreti:lurker", {
 	type = "monster",

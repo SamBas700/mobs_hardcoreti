@@ -16,7 +16,12 @@ dofile(path .. "/lurker.lua") -- SamBas
 dofile(path .. "/robot.lua") -- SamBas
 dofile(path .. "/wtf.lua") -- SamBas
 dofile(path .. "/erepede.lua") -- SamBas
+dofile(path .. "/present.lua") -- SamBas
 dofile(path .. "/spidermother.lua") -- SamBas
 dofile(path .. "/bullsquid.lua") -- SamBas
+dofile(path .. "/butterfly.lua") -- SamBas
+dofile(path .. "/dino.lua") -- SamBas
+dofile(path .. "/strider.lua") -- SamBas
+dofile(path .. "/bettle.lua") -- SamBas
 
 print (S("[MOD] Mobs Redo 'Animals' loaded"))

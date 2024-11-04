@@ -1,7 +1,7 @@
 
 local S = mobs.intllib
 
--- Dungeon Master by PilzAdam
+-- wendigo by SamBas
 
 mobs:register_mob("mobs_hardcoreti:wendigo", {
 	type = "monster",
@@ -63,7 +63,7 @@ mobs:spawn({
 	chance = 1, -- 10
 })
 
-mobs:register_egg("mobs_hardcoreti:wendigo", S("Wendigo"), "fire_basic_flame.png", 1)
+mobs:register_egg("mobs_hardcoreti:wendigo", S("Wendigo"), "default_snow.png", 1)
 
 -- compatibility
 mobs:alias_mob("mobs:wendigo", "mobs_monster:wendigo")

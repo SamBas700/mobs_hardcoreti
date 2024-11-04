@@ -1,7 +1,7 @@
 
 local S = mobs.intllib
 
--- Dirt Monster by PilzAdam
+-- WTF by SamBas
 
 mobs:register_mob("mobs_hardcoreti:wtf", {
 	type = "monster",
@@ -13,7 +13,7 @@ mobs:register_mob("mobs_hardcoreti:wtf", {
 	hp_min = 20,
 	hp_max = 32,
 	armor = 100,
-	collisionbox = {-0.4, -0.1, -0.4, 0.4, 0.8, 0.4},
+	collisionbox = {-0.4, -0.1, -0.4, 0.4, 1.3, 0.4},
 	visual_size = {x = 10, y = 10},
 	visual = "mesh",
 	mesh = "wtf.b3d",
@@ -25,7 +25,7 @@ mobs:register_mob("mobs_hardcoreti:wtf", {
 	sounds = {
 		random = "wtf_living",
 		death = "alo_death",
-		damage = "alo_hurt",
+		damage = "duck_hurt",
 	},
 	view_range = 15,
 	walk_velocity = 2,
@@ -59,7 +59,7 @@ mobs:spawn({
 	chance = 10, -- 10
 })
 
-mobs:register_egg("mobs_hardcoreti:wtf", S("Wtf"), "default_dirt.png", 1)
+mobs:register_egg("mobs_hardcoreti:wtf", S("Wtf"), "wtf.png", 1)
 
 -- compatibility
 mobs:alias_mob("mobs:wtf", "mobs_hardcoreti:wtf")

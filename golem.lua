@@ -1,7 +1,7 @@
 
 local S = mobs.intllib
 
--- Mese Monster by Zeg9
+-- Golem by SamBas
 
 mobs:register_mob("mobs_hardcoreti:golem", {
 	type = "monster",

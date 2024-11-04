@@ -1,7 +1,7 @@
 
 local S = mobs.intllib
 
--- Mese Monster by Zeg9
+-- SpiderGiant by SamBas
 
 mobs:register_mob("mobs_hardcoreti:spidergiant", {
 	type = "monster",

@@ -3,7 +3,7 @@ local S = mobs.intllib
 
 -- Erepede by SamBas
 
-mobs:register_mob("mobs_hardcoreti:erepede", {
+mobs:register_mob("mobs_hardcoreti:dino", {
 	type = "monster",
 	passive = false,
 	attack_type = "dogfight",
@@ -13,20 +13,19 @@ mobs:register_mob("mobs_hardcoreti:erepede", {
 	hp_min = 20,
 	hp_max = 32,
 	armor = 100,
-	collisionbox = {-0.4, -0.1, -0.4, 0.4, 0.8, 0.4},
+	collisionbox = {-0.4, -0.1, -0.4, 0.4, 3, 0.4},
 	visual_size = {x = 10, y = 10},
 	visual = "mesh",
-	mesh = "erepede.b3d",
+	mesh = "dino.b3d",
 	textures = {
-		{"mobs_erepede.png"},
-		{"mobs_erepede2.png"},
+		{"dino.png"},
 	},
 	blood_texture = "default_sand.png",
 	makes_footstep_sound = false,
 	sounds = {
-		random = "mobs_erepede",
+		random = "trex_living",
 		death = "alo_death",
-		damage = "alo_hurt",
+		damage = "trex_living",
 	},
 	view_range = 15,
 	walk_velocity = 3,
@@ -54,13 +53,13 @@ mobs:register_mob("mobs_hardcoreti:erepede", {
 })
 
 mobs:spawn({
-	name = "mobs_hardcoreti:erepede",
-	nodes = {"default:sand", "default:desert_sand"},
+	name = "mobs_hardcoreti:dino",
+	nodes = {"default:dirt_with_grass", "ethereal:gray_dirt"},
 	interval = 2,
 	chance = 10, -- 10
 })
 
-mobs:register_egg("mobs_hardcoreti:erepede", S("Erepede"), "default_sand.png", 1)
+mobs:register_egg("mobs_hardcoreti:dino", S("Dino"), "default_papyrus.png", 1)
 
 -- compatibility
-mobs:alias_mob("mobs:erepede", "mobs_hardcoreti:erepede")
+mobs:alias_mob("mobs:dino", "mobs_hardcoreti:dino")
