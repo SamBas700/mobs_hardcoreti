@@ -1,5 +1,5 @@
 
-local S = mobs.intllib
+local S = minetest.get_translator("mobs_hardcoreti")
 
 -- Erepede by SamBas
 

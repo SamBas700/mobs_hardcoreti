@@ -1,5 +1,5 @@
 
-local S = mobs.intllib
+local S = minetest.get_translator("mobs_hardcoreti")
 
 -- Spider mother by SamBas
 
@@ -65,7 +65,7 @@ mobs:spawn({
 	chance = 1, -- 10
 })
 
-mobs:register_egg("mobs_hardcoreti:spidermother", S("Spidermother"), "fire_basic_flame.png", 1)
+mobs:register_egg("mobs_hardcoreti:spidermother", S("Spider mother"), "fire_basic_flame.png", 1)
 
 -- compatibility
 mobs:alias_mob("mobs:spidermother", "mobs_monster:spidermother")

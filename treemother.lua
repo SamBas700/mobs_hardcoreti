@@ -1,5 +1,5 @@
 
-local S = mobs.intllib
+local S = minetest.get_translator("mobs_hardcoreti")
 
 -- Treemother by Sambas
 
@@ -65,7 +65,7 @@ mobs:spawn({
 	day_toggle = true,
 })
 
-mobs:register_egg("mobs_hardcoreti:treemother", S("Treemother"), "wool_brown.png", 1)
+mobs:register_egg("mobs_hardcoreti:treemother", S("Tree mother"), "wool_brown.png", 1)
 
 -- compatibility
 mobs:alias_mob("mobs:mese_monster", "mobs_hardcoreti:mese_monster")

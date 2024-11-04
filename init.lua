@@ -1,27 +1,36 @@
+-- translation and mod path
 
-local path = minetest.get_modpath("mobs_hardcoreti")
+local S = minetest.get_translator("mobs_hardcoreti")
+local path = minetest.get_modpath(minetest.get_current_modname()) .. "/"
 
--- Load support for intllib.
-local MP = minetest.get_modpath(minetest.get_current_modname())
-local S, NS = dofile(MP.."/intllib.lua")
-mobs.intllib = S
 
--- Animals
 
-dofile(path .. "/golem.lua") -- SamBas
-dofile(path .. "/treemother.lua") -- SamBas
-dofile(path .. "/spidergiant.lua") -- SamBas
-dofile(path .. "/wendigo.lua") -- SamBas
-dofile(path .. "/lurker.lua") -- SamBas
-dofile(path .. "/robot.lua") -- SamBas
-dofile(path .. "/wtf.lua") -- SamBas
-dofile(path .. "/erepede.lua") -- SamBas
-dofile(path .. "/present.lua") -- SamBas
-dofile(path .. "/spidermother.lua") -- SamBas
-dofile(path .. "/bullsquid.lua") -- SamBas
-dofile(path .. "/butterfly.lua") -- SamBas
-dofile(path .. "/dino.lua") -- SamBas
-dofile(path .. "/strider.lua") -- SamBas
-dofile(path .. "/bettle.lua") -- SamBas
+local function ddoo(mob)
 
-print (S("[MOD] Mobs Redo 'Animals' loaded"))
+	if minetest.settings:get_bool("mobs_hardcoreti." .. mob) == false then
+		print("[mobs_hardcoreti] " .. mob .. " disabled!")
+		return
+	end
+
+	dofile(path .. mob .. ".lua")
+end
+
+-- Hardcoreti
+
+ddoo("golem") -- SamBas700
+ddoo("treemother") -- SamBas700
+ddoo("spidergiant") -- SamBas700
+ddoo("wendigo") -- SamBas700
+ddoo("lurker") -- SamBas700
+ddoo("robot") -- SamBas700
+ddoo("wtf") -- SamBas700
+ddoo("erepede") -- SamBas700
+ddoo("present") -- SamBas700
+ddoo("spidermother") -- SamBas700
+ddoo("bullsquid") -- SamBas700
+ddoo("butterfly") -- SamBas700
+ddoo("dino") -- SamBas700
+ddoo("strider") -- SamBas700
+ddoo("bettle") -- SamBas700
+
+print (S("[MOD] Mobs Redo 'Hardmobs' loaded"))

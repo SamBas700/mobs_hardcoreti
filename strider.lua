@@ -1,5 +1,5 @@
 
-local S = mobs.intllib
+local S = minetest.get_translator("mobs_hardcoreti")
 
 -- Erepede by SamBas
 
@@ -34,7 +34,7 @@ mobs:register_mob("mobs_hardcoreti:strider", {
 	jump = true,
 	drops = {
 		{name = "default:iron_lump", chance = 1, min = 10, max = 13},
-		{name = "mobs_hardcoreti:stridertreat", chance = 1, min = 1, max = 2},
+		{name = "mobs_hardcoreti:stridermeat", chance = 1, min = 1, max = 2},
 	},
 	water_damage = 0,
 	lava_damage = 5,
@@ -68,9 +68,9 @@ mobs:alias_mob("mobs:strider", "mobs_hardcoreti:strider")
 
 
 
-minetest.register_craftitem("mobs_hardcoreti:stridertreat", {
-	description = S("Strider treat"),
-	inventory_image = "stridertreat.png",
+minetest.register_craftitem("mobs_hardcoreti:stridermeat", {
+	description = S("Strider meat"),
+	inventory_image = "stridermeat.png",
 	tool_capabilities = {
 		full_punch_interval = 1,
 		max_drop_level=0,

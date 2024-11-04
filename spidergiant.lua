@@ -1,5 +1,5 @@
 
-local S = mobs.intllib
+local S = minetest.get_translator("mobs_hardcoreti")
 
 -- SpiderGiant by SamBas
 
@@ -66,7 +66,7 @@ mobs:spawn({
 	chance = 1, -- 10
 })
 
-mobs:register_egg("mobs_hardcoreti:spidergiant", S("Spidergiant"), "default_mese_block.png", 1)
+mobs:register_egg("mobs_hardcoreti:spidergiant", S("Spider giant"), "default_mese_block.png", 1)
 
 -- compatibility
 mobs:alias_mob("mobs:spidergiant", "mobs_hardcoreti:spidergiant")
