@@ -10,8 +10,8 @@ mobs:register_mob("mobs_hardcoreti:strider", {
 	pathfinding = true,
 	reach = 2,
 	damage = 12,
-	hp_min = 20,
-	hp_max = 32,
+	hp_min = 160,
+	hp_max = 200,
 	armor = 100,
 	collisionbox = {-1, -0.1, -1, 1, 10, 1},
 	visual_size = {x = 10, y = 10},
@@ -79,5 +79,5 @@ minetest.register_craftitem("mobs_hardcoreti:stridermeat", {
 		},
 		damage_groups = {fleshy=1100},
 	},
-	--on_use = minetest.item_eat(15),
+	on_use = minetest.item_eat(15),
 })

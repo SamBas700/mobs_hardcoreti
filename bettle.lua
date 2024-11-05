@@ -99,3 +99,76 @@ mobs:register_arrow("mobs_monster:fireball", {
 		mobs:explosion(pos, 1, 1, 0)
 	end
 })
+
+
+minetest.register_craft({
+	output = "mobs_hardcoreti:amethyst",
+	recipe = {
+		{"default:gold_ingot", "default:mese_crystal", "default:gold_ingot"},
+		{"default:diamond", "default:iron_lump", "default:diamond"},
+		{"default:gold_ingot", "default:gold_ingot", "default:gold_ingot"},
+	}
+})
+
+minetest.register_craftitem("mobs_hardcoreti:amethyst", {
+	description = S("Amethyst"),
+	inventory_image = "amethyst.png",
+})
+
+
+
+minetest.register_craft({
+	output = "mobs_hardcoreti:bertha",
+	recipe = {
+		{"mobs_hardcoreti:amethyst", "default:mese_crystal", "mobs_hardcoreti:amethyst"},
+		{"mobs_hardcoreti:amethyst", "mobs_hardcoreti:amethyst", "mobs_hardcoreti:amethyst"},
+		{"", "default:stick", ""},
+	}
+})
+
+minetest.register_tool("mobs_hardcoreti:bertha", {
+	description = S("Bertha"),
+	inventory_image = "bertha.png",
+	tool_capabilities = {
+		full_punch_interval = 6,
+		max_drop_level=0,
+		groupcaps={
+			snappy={times={[2]=1.6, [3]=0.40}, uses=10, maxlevel=1},
+		},
+		damage_groups = {fleshy=150},
+	},
+	sound = {breaks = "default_tool_breaks"},
+	groups = {sword = 1, flammable = 2}
+})
+
+minetest.register_craft({
+	output = "mobs_hardcoreti:amethystpickaxe",
+	recipe = {
+		{"default:diamond", "default:diamond", "default:diamond"},
+		{"mobs_hardcoreti:amethyst", "default:stick", "mobs_hardcoreti:amethyst"},
+		{"", "default:stick", ""},
+	}
+})
+
+
+
+minetest.register_tool("mobs_hardcoreti:amethystpickaxe", {
+	description = S("Amethyst pickaxe"),
+	inventory_image = "amat.png",
+	tool_capabilities = {
+		full_punch_interval = 0.9,
+		max_drop_level=3,
+		groupcaps={
+			cracky = {times={[1]=2.0, [2]=1.0, [3]=0.50}, uses=10, maxlevel=30},
+		},
+		damage_groups = {fleshy=1},
+	},
+	sound = {breaks = "default_tool_breaks"},
+	groups = {pickaxe = 0.1}
+})
+
+
+
+
+
+

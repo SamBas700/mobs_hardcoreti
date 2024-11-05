@@ -62,6 +62,7 @@ mobs:register_mob("mobs_hardcoreti:spidergiant", {
 mobs:spawn({
 	name = "mobs_hardcoreti:spidergiant",
 	nodes = {"default:stone"},
+	max_light = 7,
 	interval = 2,
 	chance = 1, -- 10
 })

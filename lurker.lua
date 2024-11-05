@@ -24,7 +24,7 @@ mobs:register_mob("mobs_hardcoreti:lurker", {
 	makes_footstep_sound = false,
 	sounds = {
 		random = "cryo_living",
-		death = "alien_death",
+		death = "cryo_death",
 		damage = "alo_hurt",
 	},
 	view_range = 15,
