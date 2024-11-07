@@ -1,4 +1,5 @@
 default
 mobs
+dye
 mobs_monster
 intllib?

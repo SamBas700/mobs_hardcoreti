@@ -39,6 +39,7 @@ mobs:register_mob("mobs_hardcoreti:spidergiant", {
 	fall_speed = -6,
 	stepheight = 2.1,
 	drops = {
+		{name = "mobs_hardcoreti:it1", chance = 4, min = 1, max = 1},
 		{name = "default:diamond", chance = 1, min = 12, max = 16},
 		{name = "default:mese_crystal_fragment", chance = 1, min = 1, max = 9},
 	},

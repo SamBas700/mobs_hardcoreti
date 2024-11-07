@@ -39,6 +39,7 @@ mobs:register_mob("mobs_hardcoreti:bettle", {
 		{name = "default:diamond", chance = 4, min = 1, max = 1},
 		{name = "default:mese_crystal", chance = 2, min = 1, max = 2},
 		{name = "default:diamondblock", chance = 30, min = 1, max = 1},
+		{name = "mobs_hardcoreti:it1", chance = 4, min = 1, max = 1},
 	},
 	water_damage = 1,
 	lava_damage = 1,
@@ -168,7 +169,80 @@ minetest.register_tool("mobs_hardcoreti:amethystpickaxe", {
 })
 
 
+minetest.register_craft({
+	output = "mobs_hardcoreti:green",
+	recipe = {
+		{"mobs_hardcoreti:amethyst", "default:diamond", "mobs_hardcoreti:amethyst"},
+		{"default:mese_crystal", "mobs_hardcoreti:it1", "default:mese_crystal"},
+		{"mobs_hardcoreti:amethyst", "default:mese_crystal", "mobs_hardcoreti:amethyst"},
+	}
+})
+
+minetest.register_craftitem("mobs_hardcoreti:green", {
+	description = S("Green Crystal"),
+	inventory_image = "green2.png",
+})
 
 
+minetest.register_craft({
+	output = "mobs_hardcoreti:infecteddungeonmaster",
+	recipe = {
+		{"mobs_hardcoreti:amethyst", "default:diamond", "mobs_hardcoreti:amethyst"},
+		{"default:mese_crystal", "mobs_hardcoreti:it1", "default:mese_crystal"},
+		{"mobs_hardcoreti:amethyst", "mobs_hardcoreti:green", "mobs_hardcoreti:amethyst"},
+	}
+})
 
 
+minetest.register_craftitem("mobs_hardcoreti:it1", {
+	description = S("The stone of youth"),
+	inventory_image = "it1.png",
+})
+
+
+minetest.register_node("mobs_hardcoreti:it2", {
+	description = S("Creeper torch"),
+	drawtype = "plantlike",
+	waving = 0,
+	light_source = 100,
+	tiles = {"it2.png"},
+	inventory_image = "it2.png",
+	wield_image = "it2.png",
+	paramtype = "light",
+	sunlight_propagates = true,
+	walkable = false,
+	buildable_to = true,
+	groups = {snappy = 3, flammable = 3, flora = 1, grass = 1,
+		fern = 1, attached_node = 1},
+	sounds = default.node_sound_leaves_defaults(),
+	selection_box = {
+		type = "fixed",
+		fixed = {-6 / 16, -0.5, -6 / 16, 6 / 16, -0.25, 6 / 16},
+	},
+})
+
+
+minetest.register_craftitem("mobs_hardcoreti:it3", {
+	description = S("The enlivening sheet"),
+	inventory_image = "sheet.png",
+})
+
+
+minetest.register_craft({
+	output = "mobs_hardcoreti:minigolem",
+	recipe = {
+		{"mobs_hardcoreti:green", "mobs_hardcoreti:it1", "mobs_hardcoreti:amethyst"},
+		{"mobs_hardcoreti:it3", "mobs_hardcoreti:it1", "mobs_hardcoreti:it3"},
+		{"mobs_hardcoreti:amethyst", "mobs_hardcoreti:it3", "mobs_hardcoreti:amethyst"},
+	}
+})
+
+
+minetest.register_craft({
+	output = "mobs_hardcoreti:it2",
+	recipe = {
+		{"", "default:coal_lump", ""},
+		{"", "dye:green", ""},
+		{"", "default:stick", ""},
+	}
+})

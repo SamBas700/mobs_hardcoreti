@@ -32,5 +32,7 @@ ddoo("butterfly") -- SamBas700
 ddoo("dino") -- SamBas700
 ddoo("strider") -- SamBas700
 ddoo("bettle") -- SamBas700
+ddoo("minigolem") -- SamBas700
+ddoo("infecteddungeonmaster") -- SamBas700
 
 print (S("[MOD] Mobs Redo 'Hardmobs' loaded"))

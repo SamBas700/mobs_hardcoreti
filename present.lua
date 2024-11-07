@@ -7,6 +7,7 @@ mobs:register_mob("mobs_hardcoreti:present", {
 	type = "animal",
 	passive = false,
 	attack_type = "dogfight",
+	attack_npcs = false,
 	pathfinding = true,
 	reach = 2,
 	damage = 140,
